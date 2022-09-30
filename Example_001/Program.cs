@@ -7,7 +7,7 @@ int b1 = int.Parse(b);
 
 Console.Clear();
 Console.Write("a = "+ a + ", b = " + b + " -> ");
-if (a1 == b1*b1)
+if (a1 == b1 * b1)
 {
     Console.WriteLine("да");
 }
