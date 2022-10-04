@@ -1,8 +1,8 @@
 ﻿Console.Write("Enter first number: ");
 string userFirstNumber = Console.ReadLine() ?? "";
-Console.Write("Enter first number: ");
+Console.Write("Enter second number: ");
 string userSecondNumber = Console.ReadLine() ?? "";
-Console.Write("Enter first number: ");
+Console.Write("Enter third number: ");
 string userThirdNumber = Console.ReadLine() ?? "";
 int firstNumber = int.Parse(userFirstNumber);
 int secondNumber = int.Parse(userSecondNumber);
