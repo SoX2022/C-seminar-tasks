@@ -56,7 +56,7 @@ PrintArray(userArray);
 static int[] FillArray(int[] qwe)
 {
     int index = 0;
-    Console.WriteLine("Enter array data.");
+    Console.WriteLine("Enter array data. To stop enter 'Q'");
 
     while (true)
     {
