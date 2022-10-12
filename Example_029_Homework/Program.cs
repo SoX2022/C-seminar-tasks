@@ -53,7 +53,7 @@ PrintArray(userArray);
 
 
 
-static int[] FillArray(int[] qwe)
+static int[] FillArray(int[] array)
 {
     int index = 0;
     Console.WriteLine("Enter array data. To stop enter 'Q'");
@@ -63,15 +63,15 @@ static int[] FillArray(int[] qwe)
         string userArrayData = Console.ReadLine() ?? "";
         if (int.TryParse(userArrayData, out int userData))
         {
-            Array.Resize(ref qwe, index + 1);
-            qwe[index] = userData;
+            Array.Resize(ref array, index + 1);
+            array[index] = userData;
             index++;
         }
         else
         {
             userArrayData = userArrayData.ToLower();
             if (userArrayData == "q")
-                return qwe;
+                return array;
             else
                 Console.WriteLine("Error");
         }
