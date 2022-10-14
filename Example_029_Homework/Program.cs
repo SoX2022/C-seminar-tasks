@@ -80,8 +80,6 @@ static int[] FillArray(int[] array)
 
 static void PrintArray(int[] array)
 {
-    int length = array.Length;
-
     for (int index = 0; index < array.Length - 1; index++)
         Console.Write($"{array[index]}, ");
 
