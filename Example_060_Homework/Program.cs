@@ -41,15 +41,17 @@ static bool ArrayElementDetecter(int[,,] array, int value)
 
 static void PrintResult(int[,,] array)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+    for (int k = 0; k < array.GetLength(2); k++)
     {
-        for (int j = 0; j < array.GetLength(1); j++)
+        for (int i = 0; i < array.GetLength(0); i++)
         {
-            for (int k = 0; k < array.GetLength(2); k++)
+            for (int j = 0; j < array.GetLength(1); j++)
             {
-                Console.WriteLine($"{array[i, j, k]} ({i},{j},{k})");
+                Console.Write($"{array[i, j, k]}({i},{j},{k}) ");
             }
+            Console.WriteLine();
         }
+        Console.WriteLine();
     }
 }
 
