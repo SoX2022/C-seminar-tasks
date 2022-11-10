@@ -8,7 +8,7 @@ static int GetNumberFromUser(string message, string errorMessage)
     while (true)
     {
         Console.Write(message);
-        bool isCorrect = int.TryParse(Console.ReadLine() ?? "", out int userNumber);
+        bool isCorrect = int.TryParse(Console.ReadLine() ?? "", out int userNumber) && userNumber > 0;
         if (isCorrect)
             return userNumber;
         Console.WriteLine(errorMessage);
