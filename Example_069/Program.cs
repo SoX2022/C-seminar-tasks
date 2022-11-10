@@ -40,7 +40,7 @@ else
     if (secondUserNumber < 0)
     {
         powResult = 1 / powResult;
-        Console.WriteLine(secondResult);
+        Console.WriteLine(powResult);
     }
     else
         Console.WriteLine(powResult);
